@@ -41,11 +41,18 @@ function openLetter(letter) {
     if (letter == null) return
     letter.classList.add("active")
     overlay.classList.add("active")
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
+
 }
 function closeLetter(letter) {
     if (letter == null) return
     letter.classList.remove("active")
     overlay.classList.remove("active")
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
 
 const tableCells = document.querySelectorAll("td");

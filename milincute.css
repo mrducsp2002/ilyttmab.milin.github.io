@@ -174,9 +174,9 @@ table {
 }
 
 #background1 {
-    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed3.JPG") no-repeat;
+    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed4.JPG") no-repeat;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 15%;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -196,9 +196,12 @@ table {
     padding: 15px 15px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    color: beige;
-    border-color: beige;
-    border: 2px solid beige;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+#button-background:hover {
+    box-shadow: 0px 0px 3px white, 0px 0px 3px white inset;
 }
 
 .letter-body {
@@ -221,9 +224,9 @@ table {
     max-height: 90%;
     padding: 30px 50px;
     line-height: 1.7em;
-    font-family: 'Caveat', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     background: url("letter.jpg");
     background-repeat: no-repeat;
@@ -246,9 +249,9 @@ table {
 }
 
 .letter-header .title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-family: "Caveat Brush", cursive;
+    font-family: 'Caveat Brush', cursive;
 }
 
 .letter-header .close-button {

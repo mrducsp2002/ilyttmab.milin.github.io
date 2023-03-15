@@ -132,7 +132,7 @@ q:after {
 
 
 .floating-div {
-    animation: floatOnLoad 2s ease-in-out;
+    animation: floatOnLoad 1.5s ease-in-out;
 }
 
 @keyframes floatOnLoad {
@@ -177,7 +177,7 @@ body {
 
 .heart {
     background: none;
-    color: beige;
+    color: white;
     border: 2px solid;
     padding: 0.5em 2em;
     margin-left: 1.5em;
@@ -195,13 +195,13 @@ input {
     height: 44px;
     width: 50%;
     background: none;
-    border: 2px solid beige;
+    border: 2px solid white;
     border-radius: 5px;
     padding-left: 20px;
-    color: beige;
+    color: white;
 }
 
 input::placeholder {
-    color: beige;
+    color: white;
     opacity: 0.5;
 }
