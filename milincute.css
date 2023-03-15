@@ -149,6 +149,7 @@ table {
 #background1 {
     background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed3.JPG") no-repeat !important;
 }
+
 #button-background {
     background: none;
     padding: 15px 15px;
