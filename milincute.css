@@ -147,7 +147,21 @@ table {
 }
 
 #background1 {
-    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed3.JPG") no-repeat !important;
+    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed3.JPG") no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-body>img {
+    width: 100%;
+    margin-top: 15px;
+
 }
 
 #button-background {
@@ -334,6 +348,7 @@ td>button {
     background: none;
     border: none;
 }
+
 button.active {
     color: pink;
 }
