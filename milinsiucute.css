@@ -163,7 +163,7 @@ body {
     margin-bottom: 40px;
 }
 
-.container {
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
