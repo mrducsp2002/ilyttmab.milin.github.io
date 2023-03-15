@@ -129,9 +129,22 @@ q:after {
     content: none;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+
+
+.floating-div {
+    animation: floatOnLoad 2s ease-in-out;
+}
+
+@keyframes floatOnLoad {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 body {
@@ -150,7 +163,7 @@ body {
     margin-bottom: 40px;
 }
 
-#container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +200,8 @@ input {
     padding-left: 20px;
     color: beige;
 }
-input::placeholder{
+
+input::placeholder {
     color: beige;
     opacity: 0.5;
 }

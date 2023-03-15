@@ -11,3 +11,7 @@ submitBtn.addEventListener("click", (e) => {
     }
 });
 
+window.addEventListener('load', function () {
+    var floatingDiv = document.querySelector('.floating-div');
+    floatingDiv.classList.add('floating-div');
+});
