@@ -345,18 +345,17 @@ td>button {
 }
 
 td>button:hover {
-    transform: scale(1.1);
-    color: pink;
+    transform: scale(1.2);
 }
 
 td>button.active {
-    color: pink;
+    color: #f99191;
 }
 
 th,
 tr {
     font-weight: 600;
-    color: pink;
+    color: #f99191;
 }
 
 .calendar-day {
@@ -367,9 +366,9 @@ tr {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 30px;
-    color: pink;
+    color: #f99191;
     margin: 20px;
-    margin-top: 5%;
+    margin: 4%;
 }
 
 td>button {
@@ -379,7 +378,7 @@ td>button {
 }
 
 button.active {
-    color: pink;
+    color: #f99191;
 }
 
 #footer {
