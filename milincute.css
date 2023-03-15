@@ -174,9 +174,9 @@ table {
 }
 
 #background1 {
-    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed4.JPG") no-repeat;
+    background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed3.JPG") no-repeat;
     background-repeat: no-repeat;
-    background-position: center 15%;
+    background-position: center 55%;
     background-size: cover;
     height: 100vh;
     width: 100%;
