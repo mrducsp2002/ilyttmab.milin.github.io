@@ -7,7 +7,7 @@ submitBtn.addEventListener("click", (e) => {
     if (inputValue == "520") {
         window.location.href = "milincute.html";
     } else {
-        alert("Stay off!")
+        alert("Stay off from milin's private space!")
     }
 });
 
