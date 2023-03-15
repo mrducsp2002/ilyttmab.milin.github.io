@@ -133,17 +133,6 @@ table {
     display: none;
 }
 
-.containerized {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100%;
-}
-.containerized > section {
-    scroll-snap-align: start;
-    width: 100vw;
-    height: 100vh;
-}
 
 #background {
     background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed.JPG") no-repeat;
