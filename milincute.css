@@ -133,6 +133,33 @@ table {
     display: none;
 }
 
+.floating-div {
+    animation: floatOnLoad 1s ease-in-out;
+}
+
+@keyframes floatOnLoad {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatOnLoadLetter {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -45%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
 
 #background {
     background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)), url("accessed.JPG") no-repeat;
@@ -185,8 +212,8 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
+    /* transition:  200ms ease-in-out; */
+    border: none;
     border-radius: 10px;
     z-index: 1000;
     background-color: white;
@@ -195,7 +222,7 @@ table {
     padding: 30px 50px;
     line-height: 1.7em;
     font-family: 'Caveat', cursive;
-    font-weight: 6 00;
+    font-weight: 600;
     font-size: 20px;
     text-align: left;
     background: url("letter.jpg");
@@ -207,6 +234,7 @@ table {
 
 .letter.active {
     transform: translate(-50%, -50%) scale(1);
+    animation: floatOnLoadLetter .6s ease-in-out;
 }
 
 .letter-header {
@@ -354,9 +382,8 @@ button.active {
     color: pink;
 }
 
-#footer{
+#footer {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-style: italic;
 }
-
