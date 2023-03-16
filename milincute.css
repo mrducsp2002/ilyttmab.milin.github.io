@@ -218,7 +218,7 @@ table {
     /* transition:  200ms ease-in-out; */
     border: none;
     border-radius: 10px;
-    z-index: 1000;
+    z-index: 99999999999;
     background-color: white;
     width: 50%;
     max-height: 90%;
@@ -264,7 +264,7 @@ table {
     color: midnightblue;
 }
 
-#overlay {
+.overlay {
     position: fixed;
     transition: 200ms ease-in-out;
     opacity: 0;
@@ -278,7 +278,7 @@ table {
     z-index: 90;
 }
 
-#overlay.active {
+.overlay.active {
     opacity: 1;
     pointer-events: all;
     overscroll-behavior: contain;
