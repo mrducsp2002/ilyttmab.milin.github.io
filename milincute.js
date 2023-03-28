@@ -50,7 +50,7 @@ overlays.forEach(overlay => {
 });
 
 function openLetter(letter) {
-    if (letter == null) return;
+    // if (letter == null) return;
     letter.classList.add("active");
     document.body.style.position = 'fixed';
     document.scrollTop = `-${window.scrollY}px`;
