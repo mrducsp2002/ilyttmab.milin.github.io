@@ -26,7 +26,8 @@
 <body>
     <div class="containerized">
         <section>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div id="carouselExampleControls" class="carousel carousel-fade slide" data-bs-ride="carousel"
+                data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="container-fluid text-center" id="background2">
@@ -201,247 +202,443 @@
         <section>
             <div class="container-fluid text-center sections" id="calendar-page">
                 <div class="heading">LETTER BOX</div>
-                <div class="calendar">
-                    <div id="calendar-heading">
-                        MARCH
+                <div id="carouselCalendar" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="calendar">
+                                <div id="calendar-heading">
+                                    MARCH
+                                </div>
+                                <div class="calendar-day">
+                                    <table id="calendar">
+                                        <tr>
+                                            <th>SUN</th>
+                                            <th>MON</th>
+                                            <th>TUE</th>
+                                            <th>WED</th>
+                                            <th>THU</th>
+                                            <th>FRI</th>
+                                            <th>SAT</th>
+                                        </tr>
+                                        <tr>
+                                            <td><button></button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button>1</button></td>
+                                            <td><button>2</button></td>
+                                            <td><button>3</button></td>
+                                            <td><button>4</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>5</button></td>
+                                            <td><button>6</button></td>
+                                            <td><button>7</button></td>
+                                            <td><button>8</button></td>
+                                            <td><button>9</button></td>
+                                            <td><button>10</button></td>
+                                            <td><button>11</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>12</button></td>
+                                            <td><button>13</button></td>
+                                            <td><button>14</button></td>
+                                            <td><button>15</button></td>
+                                            <td><button data-letter-target="#letter1">16</button>
+                                                <div class="letter" id="letter1">
+                                                    <div class="letter-header">
+                                                        <div class="title">Welcome to milin's letter box</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        You found the letter box!<br>
+                                                        From tomorrow one letter will be delivered every morning to this
+                                                        letter box
+                                                        before you wake up.<br> I am happy for your visit everyday.
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter2">17</button>
+                                                <div class="letter" id="letter2">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #1</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        Ngày đầu tiên đi làm mà hong có ai nhắn tin làm phiền trước khi
+                                                        đi làm hết..
+                                                        <br>Chưa bao giờ anh đi làm mà cảm giác trống rỗng tới z. Anh
+                                                        nhớ những ngày
+                                                        tranh thủ những phút cuối cùng trước khi vô làm để nhắn tin với
+                                                        em, chúc em
+                                                        ngủ ngon, những ngày ngồi ở nhà tới sát giờ đi làm mới chịu đi
+                                                        (xong lúc nào
+                                                        cũng mém trễ hết). Trời chắc nó
+                                                        là niềm an ủi duy nhất của anh mỗi khi anh đi làm
+                                                        luôn đó.
+                                                        <br><br>Dưới đây là tấm hình anh chụp hôm anh đợi em tan làm nè.
+                                                        Dù chỉ có
+                                                        dịp
+                                                        đưa đón em đi làm được một lần lúc còn ở VN thôi nhưng mà nhiêu
+                                                        đó cũng đủ
+                                                        để anh muốn là từ nay về sau có thể là người đưa đón em đi làm
+                                                        về hằng ngày
+                                                        rùi. Anh vẫn còn nhớ khoảnh khắc em sà vào người anh cảm giác nó
+                                                        bình yên
+                                                        lắm,
+                                                        chỉ
+                                                        muốn nó như vậy mãi thuii.<br>Bị nhớ cảm giác đưa em đi làm xong
+                                                        đón em về
+                                                        rùi,
+                                                        cho quay lại lúc đó được hong 🥹🥹.<br>
+                                                        <img src="letter1.jpg" alt="">
+                                                        <!-- Waking up receiving your messages has been the reason I smile
+                                                                    everyday when I open my eyes. It reminds me that you are still here. -->
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter3">18</button>
+                                                <div class="letter" id="letter3">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #2</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        If there are two things on this Earth that can make me feel
+                                                        immediately
+                                                        loved, it would be your "chao bui sang" and "ngu ngon ngak". Oh,
+                                                        and that as
+                                                        well.
+                                                        <img src="letter2.jpg" alt="">
+
+                                                    </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><button data-letter-target="#letter4">19</button>
+                                                <div class="letter" id="letter4">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #3</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        Too many thoughts today.. I think I really need to speak it out.
+                                                        <!-- <img src="letter2.jpg" alt=""> -->
+
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter5">20</button>
+                                                <div class="letter" id="letter5">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #4</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        For the last week I have been living in the fear of what if one
+                                                        day I lose you in this world.. What if one
+                                                        day you slip out of my hand? And honestly it cannot be worse.
+                                                        That is why I
+                                                        craved for your attention so much and I gave
+                                                        you so much love, because I am afraid that if I don't give my
+                                                        best to love
+                                                        you then I'll lose you. And indeed I was
+                                                        expecting something in return. But I realize that doing so only
+                                                        make you
+                                                        feel more under pressure, because you are not
+                                                        mentally capable at the time to requite all those love. So I
+                                                        think what I'll
+                                                        do right now is I will still love you with
+                                                        all my heart, regardless, but I won't expect anything else. I
+                                                        just want
+                                                        you to know that I love you because that's
+                                                        what I want to do, and I feel happy when doing it. That's how I
+                                                        used to love
+                                                        you right? Just loving you and be grateful for
+                                                        everything.<br><br>
+
+                                                        From now on, no more expectation, only loving you with this
+                                                        heart.
+                                                    </div>
+                                            </td>
+                                            <td><button>21</button></td>
+                                            <td><button data-letter-target="#letter6">22</button>
+                                                <div class="letter" id="letter6">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #5</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        Thiệc lạ là có mong muốn ngẫu hứng của một người mà anh có thể
+                                                        nghiêm
+                                                        túc với nó như vậy đó.
+                                                        <img src="letter3.jpg" alt="">
+                                                    </div>
+                                            </td>
+                                            <td><button>23</button></td>
+                                            <td><button data-letter-target="#letter7">24</button>
+                                                <div class="letter" id="letter7">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #6</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        🙆🏻‍♀️: Anh gan hơn em nghĩ nhiều đók.
+                                                        <br>🧠: Tất nhiên rồi không gan sao mà iu em cho được 😌.
+                                                        <!-- <img src="letter3.jpg" alt=""> -->
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter8">25</button>
+                                                <div class="letter" id="letter8">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #7</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        🙆🏻‍♀️: Anh mà bỏ em theo nhỏ cùng phòng thì em nghĩ cũng tới
+                                                        lúc em đổi
+                                                        bạn trai rồi đó.
+                                                        <br>🧠: Ngốk. No one on this Earth is worth the cost of you het.
+                                                        <!-- <img src="letter3.jpg" alt=""> -->
+                                                    </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><button data-letter-target="#letter9">26</button>
+                                                <div class="letter" id="letter9">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #8</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        In my world, you are my princess, my lifelong treasure of
+                                                        destiny
+                                                        (Lebenslangeschicksalschatz).
+                                                        <!-- <img src="letter3.jpg" alt=""> -->
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter10">27</button>
+                                                <div class="letter" id="letter10">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #9</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        <i>"If, for example, you come at four o’clock in the afternoon,
+                                                            then at
+                                                            three o’clock I shall begin to feel happy. As the
+                                                            time passes I shall feel happier and happier. At four
+                                                            o’clock, I shall
+                                                            become agitated and start worrying; I shall
+                                                            discover the price of happiness!"</i>
+                                                        <br><br> - The Little Prince, Antoine de Saint-Exupéry
+                                                    </div>
+                                            </td>
+                                            <td><button>28</button></td>
+                                            <td><button data-letter-target="#letter11">29</button>
+                                                <div class="letter" id="letter11">
+                                                    <div class="letter-header">
+                                                        <div class="title">Song that reminds me about you #1</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        "I don't care how long it takes<br>As long as I'm with you, I've
+                                                        got a
+                                                        smile on my face"
+                                                        <br><br> - Here With Me, d4vd
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter12">30</button>
+                                                <div class="letter" id="letter12">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #10</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        Just a random thought but since the day I'm your boyfriend, I
+                                                        just want to become
+                                                        the best version of myself, to display that
+                                                        version to your parents and tell your parents that "your
+                                                        daughter have
+                                                        chosen the right person" and also, to make you super
+                                                        proud whenever you tell anyone about me.
+                                                        <br><br>À đúng rồi, tôi cần phải có bản lĩnh kiếm tiền để em còn
+                                                        tiêu tiền của tôi nữa chứ.
+                                                    </div>
+                                            </td>
+                                            <td><button data-letter-target="#letter13">31</button>
+                                                <div class="letter" id="letter13">
+                                                    <div class="letter-header">
+                                                        <div class="title">Letter #11</div>
+                                                        <button data-close-button class="close-button">&times;</button>
+                                                    </div>
+                                                    <div class="letter-body">
+                                                        Dạo này anh nhận ra một điều là từ lúc yêu em đôi mắt này chỉ
+                                                        còn nhìn thấy mỗi mình em thôi. Những người con gái khác trong
+                                                        mắt
+                                                        anh đều trở nên nhạt nhẽo vô vị.<br>
+                                                        <img src="letter4.JPG" alt="">
+                                                    </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="footer">Crafted by Duckie with lots of love (and tears 🥹🥹).</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="calendar">
+                                <div id="calendar-heading">
+                                    APRIL
+                                </div>
+                                <div class="calendar-day">
+                                    <table>
+                                        <tr>
+                                            <th>SUN</th>
+                                            <th>MON</th>
+                                            <th>TUE</th>
+                                            <th>WED</th>
+                                            <th>THU</th>
+                                            <th>FRI</th>
+                                            <th>SAT</th>
+                                        </tr>
+                                        <tr>
+                                            <td><button></button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button>1</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>2</button></td>
+                                            <td><button>3</button></td>
+                                            <td><button>4</button></td>
+                                            <td><button>5</button></td>
+                                            <td><button>6</button></td>
+                                            <td><button>7</button></td>
+                                            <td><button>8</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>9</button></td>
+                                            <td><button>10</button></td>
+                                            <td><button>11</button></td>
+                                            <td><button>12</button></td>
+                                            <td><button>13</button></td>
+                                            <td><button>14</button></td>
+                                            <td><button>15</button></td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>16</button></td>
+                                            <td><button>17</button></td>
+                                            <td><button>18</button></td>
+                                            <td><button>19</button></td>
+                                            <td><button>20</button></td>
+                                            <td><button>21</button></td>
+                                            <td><button>22</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>23</button></td>
+                                            <td><button>24</button></td>
+                                            <td><button>25</button></td>
+                                            <td><button>26</button></td>
+                                            <td><button>27</button></td>
+                                            <td><button>28</button></td>
+                                            <td><button>29</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>30</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="footer">3 months left.</div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <div class="calendar">
+                                <div id="calendar-heading">
+                                    APRIL
+                                </div>
+                                <div class="calendar-day">
+                                    <table>
+                                        <tr>
+                                            <th>SUN</th>
+                                            <th>MON</th>
+                                            <th>TUE</th>
+                                            <th>WED</th>
+                                            <th>THU</th>
+                                            <th>FRI</th>
+                                            <th>SAT</th>
+                                        </tr>
+                                        <tr>
+                                            <td><button></button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button>1</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>2</button></td>
+                                            <td><button>3</button></td>
+                                            <td><button>4</button></td>
+                                            <td><button>5</button></td>
+                                            <td><button>6</button></td>
+                                            <td><button>7</button></td>
+                                            <td><button>8</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>9</button></td>
+                                            <td><button>10</button></td>
+                                            <td><button>11</button></td>
+                                            <td><button>12</button></td>
+                                            <td><button>13</button></td>
+                                            <td><button>14</button></td>
+                                            <td><button>15</button></td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>16</button></td>
+                                            <td><button>17</button></td>
+                                            <td><button>18</button></td>
+                                            <td><button>19</button></td>
+                                            <td><button>20</button></td>
+                                            <td><button>21</button></td>
+                                            <td><button>22</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>23</button></td>
+                                            <td><button>24</button></td>
+                                            <td><button>25</button></td>
+                                            <td><button>26</button></td>
+                                            <td><button>27</button></td>
+                                            <td><button>28</button></td>
+                                            <td><button>29</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><button>30</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="footer">Crafted by Duckie with lots of love (and tears 🥹🥹).</div>
+                            </div>
+                        </div> -->
                     </div>
-                    <div class="calendar-day">
-                        <table id="calendar">
-                            <tr>
-                                <th>SUN</th>
-                                <th>MON</th>
-                                <th>TUE</th>
-                                <th>WED</th>
-                                <th>THU</th>
-                                <th>FRI</th>
-                                <th>SAT</th>
-                            </tr>
-                            <tr>
-                                <td><button></button></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>1</button></td>
-                                <td><button>2</button></td>
-                                <td><button>3</button></td>
-                                <td><button>4</button></td>
-                            </tr>
-                            <tr>
-                                <td><button>5</button></td>
-                                <td><button>6</button></td>
-                                <td><button>7</button></td>
-                                <td><button>8</button></td>
-                                <td><button>9</button></td>
-                                <td><button>10</button></td>
-                                <td><button>11</button></td>
-                            </tr>
-                            <tr>
-                                <td><button>12</button></td>
-                                <td><button>13</button></td>
-                                <td><button>14</button></td>
-                                <td><button>15</button></td>
-                                <td><button data-letter-target="#letter1">16</button>
-                                    <div class="letter" id="letter1">
-                                        <div class="letter-header">
-                                            <div class="title">Welcome to milin's letter box</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            You found the letter box!<br>
-                                            From tomorrow one letter will be delivered every morning to this letter box
-                                            before you wake up.<br> I am happy for your visit everyday.
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter2">17</button>
-                                    <div class="letter" id="letter2">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #1</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            Ngày đầu tiên đi làm mà hong có ai nhắn tin làm phiền trước khi đi làm hết..
-                                            <br>Chưa bao giờ anh đi làm mà cảm giác trống rỗng tới z. Anh nhớ những ngày
-                                            tranh thủ những phút cuối cùng trước khi vô làm để nhắn tin với em, chúc em
-                                            ngủ ngon, những ngày ngồi ở nhà tới sát giờ đi làm mới chịu đi (xong lúc nào
-                                            cũng mém trễ hết). Trời chắc nó
-                                            là niềm an ủi duy nhất của anh mỗi khi anh đi làm
-                                            luôn đó.
-                                            <br><br>Dưới đây là tấm hình anh chụp hôm anh đợi em tan làm nè. Dù chỉ có
-                                            dịp
-                                            đưa đón em đi làm được một lần lúc còn ở VN thôi nhưng mà nhiêu đó cũng đủ
-                                            để anh muốn là từ nay về sau có thể là người đưa đón em đi làm về hằng ngày
-                                            rùi. Anh vẫn còn nhớ khoảnh khắc em sà vào người anh cảm giác nó bình yên
-                                            lắm,
-                                            chỉ
-                                            muốn nó như vậy mãi thuii.<br>Bị nhớ cảm giác đưa em đi làm xong đón em về
-                                            rùi,
-                                            cho quay lại lúc đó được hong 🥹🥹.<br>
-                                            <img src="letter1.jpg" alt="">
-                                            <!-- Waking up receiving your messages has been the reason I smile
-                                            everyday when I open my eyes. It reminds me that you are still here. -->
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter3">18</button>
-                                    <div class="letter" id="letter3">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #2</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            If there are two things on this Earth that can make me feel immediately
-                                            loved, it would be your "chao bui sang" and "ngu ngon ngak". Oh, and that as
-                                            well.
-                                            <img src="letter2.jpg" alt="">
-
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><button data-letter-target="#letter4">19</button>
-                                    <div class="letter" id="letter4">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #3</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            Too many thoughts today.. I think I really need to speak it out.
-                                            <!-- <img src="letter2.jpg" alt=""> -->
-
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter5">20</button>
-                                    <div class="letter" id="letter5">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #4</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            For the last week I have been living in the fear of what if one
-                                            day I lose you in this world.. What if one
-                                            day you slip out of my hand? And honestly it cannot be worse. That is why I
-                                            craved for your attention so much and I gave
-                                            you so much love, because I am afraid that if I don't give my best to love
-                                            you then I'll lose you. And indeed I was
-                                            expecting something in return. But I realize that doing so only make you
-                                            feel more under pressure, because you are not
-                                            mentally capable at the time to requite all those love. So I think what I'll
-                                            do right now is I will still love you with
-                                            all my heart, regardless, but I won't expect anything else. I just want
-                                            you to know that I love you because that's
-                                            what I want to do, and I feel happy when doing it. That's how I used to love
-                                            you right? Just loving you and be grateful for everything.<br><br>
-
-                                            From now on, no more expectation, only loving you with this heart.
-                                        </div>
-                                </td>
-                                <td><button>21</button></td>
-                                <td><button data-letter-target="#letter6">22</button>
-                                    <div class="letter" id="letter6">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #5</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            Thiệc lạ là có mong muốn ngẫu hứng của một người mà anh có thể nghiêm
-                                            túc với nó như vậy đó.
-                                            <img src="letter3.jpg" alt="">
-                                        </div>
-                                </td>
-                                <td><button>23</button></td>
-                                <td><button data-letter-target="#letter7">24</button>
-                                    <div class="letter" id="letter7">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #6</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            🙆🏻‍♀️: Anh gan hơn em nghĩ nhiều đók.
-                                            <br>🧠: Tất nhiên rồi không gan sao mà iu em cho được 😌.
-                                            <!-- <img src="letter3.jpg" alt=""> -->
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter8">25</button>
-                                    <div class="letter" id="letter8">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #7</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            🙆🏻‍♀️: Anh mà bỏ em theo nhỏ cùng phòng thì em nghĩ cũng tới lúc em đổi
-                                            bạn trai rồi đó.
-                                            <br>🧠: Ngốk. No one on this Earth is worth the cost of you het.
-                                            <!-- <img src="letter3.jpg" alt=""> -->
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><button data-letter-target="#letter9">26</button>
-                                    <div class="letter" id="letter9">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #8</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            In my world, you are my princess, my lifelong treasure of destiny
-                                            (Lebenslangeschicksalschatz).
-                                            <!-- <img src="letter3.jpg" alt=""> -->
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter10">27</button>
-                                    <div class="letter" id="letter10">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #9</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            <i>"If, for example, you come at four o’clock in the afternoon, then at
-                                                three o’clock I shall begin to feel happy. As the
-                                                time passes I shall feel happier and happier. At four o’clock, I shall
-                                                become agitated and start worrying; I shall
-                                                discover the price of happiness!"</i>
-                                            <br><br> - The Little Prince, Antoine de Saint-Exupéry
-                                        </div>
-                                </td>
-                                <td><button>28</button></td>
-                                <td><button data-letter-target="#letter11">29</button>
-                                    <div class="letter" id="letter11">
-                                        <div class="letter-header">
-                                            <div class="title">Song that reminds me about you #1</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            "I don't care how long it takes<br>As long as I'm with you, I've got a
-                                            smile on my face"
-                                            <br><br> - Here With Me, d4vd
-                                        </div>
-                                </td>
-                                <td><button data-letter-target="#letter12">30</button>
-                                    <div class="letter" id="letter12">
-                                        <div class="letter-header">
-                                            <div class="title">Letter #10</div>
-                                            <button data-close-button class="close-button">&times;</button>
-                                        </div>
-                                        <div class="letter-body">
-                                            Just a random thought but since the day I'm your boyfriend, I just want to become
-                                            the best version of myself, to display that
-                                            version to your parents and tell your parents that "your daughter have
-                                            chosen the right person" and also, to make you super
-                                            proud whenever you tell anyone about me.
-                                            <br><br>À đúng rồi, tôi cần phải có bản lĩnh kiếm tiền để em còn tiêu tiền của tôi nữa chứ.
-                                        </div>
-                                </td>
-                                <td><button>31</button></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div id="footer">Crafted by Duckie with lots of love (and tears 🥹🥹).</div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCalendar"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCalendar"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+
             </div>
         </section>
     </div>
-
-
-
     <script src="milincute.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

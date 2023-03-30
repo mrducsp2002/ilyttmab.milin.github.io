@@ -287,7 +287,7 @@ table {
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     overflow-y: auto;
-    z-index: 90;
+    z-index: 9999999;
 }
 
 .overlay.active {
@@ -351,7 +351,7 @@ table {
 
 td {
     width: 14.28%;
-    padding: 25px;
+    padding: 20px 20px;
 }
 
 td>button {
@@ -374,7 +374,7 @@ tr {
 }
 
 .calendar-day {
-    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 #calendar-heading {
@@ -382,8 +382,7 @@ tr {
     font-weight: 600;
     font-size: 30px;
     color: #f99191;
-    margin: 20px;
-    margin: 4%;
+    padding-top: 4%;
 }
 
 td>button {
