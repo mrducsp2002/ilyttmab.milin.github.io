@@ -1,7 +1,6 @@
 const openLetterButtons = document.querySelectorAll('[data-letter-target]');
 const closeLetterButtons = document.querySelectorAll('[data-close-button]');
 const overlays = document.querySelectorAll(".overlay");
-const unreadLetters = document.querySelectorAll(".button-active")
 
 function scrollToSection(direction) {
     const windowHeight = window.innerHeight;
@@ -28,11 +27,6 @@ openLetterButtons.forEach(button => {
     });
 });
 
-unreadLetters.forEach(letter => {
-    letter.addEventListener("click", () => {
-        letter.classList.remove("button-active");
-    })
-})
 
 closeLetterButtons.forEach(button => {
     button.addEventListener("click", () => {
