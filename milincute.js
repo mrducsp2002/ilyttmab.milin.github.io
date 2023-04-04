@@ -1,6 +1,9 @@
 const openLetterButtons = document.querySelectorAll('[data-letter-target]');
 const closeLetterButtons = document.querySelectorAll('[data-close-button]');
 const overlays = document.querySelectorAll(".overlay");
+const audio = document.querySelector("audio")
+const carouselButtons = document.querySelectorAll('[data-bs-target="#carouselExampleControls"]');
+
 
 function scrollToSection(direction) {
     const windowHeight = window.innerHeight;
@@ -20,10 +23,18 @@ window.addEventListener('wheel', event => {
 openLetterButtons.forEach(button => {
     button.addEventListener("click", () => {
         const letter = document.querySelector(button.dataset.letterTarget);
+        console.log("I made it")
         openLetter(letter);
         overlays.forEach(overlay => {
             overlay.classList.add("active"); // assign the overlay to all buttons that open letters
         });
+        if (button.getAttribute('data-letter-target') === '#letter-16') {
+            audio.currentTime = 2;
+            audio.play(); //Play audio in letter;
+        }
+    })
+    carouselButtons.forEach(button => {
+        button.disabled = true;
     });
 });
 
@@ -34,6 +45,10 @@ closeLetterButtons.forEach(button => {
         closeLetter(letter);
         overlays.forEach(overlay => {
             overlay.classList.remove("active"); // remove the overlay when closing letters
+        });
+        audio.pause(); //Play audio in letter
+        carouselButtons.forEach(button => {
+            button.disabled = false;
         });
     });
 });
@@ -46,6 +61,10 @@ overlays.forEach(overlay => {
         });
         overlays.forEach(overlay => {
             overlay.classList.remove("active"); // remove the overlay when clicking outside the letters
+        });
+        audio.pause(); //Play audio in letter
+        carouselButtons.forEach(button => {
+            button.disabled = false;
         });
     });
 });

@@ -417,3 +417,9 @@ button.active {
     /* text-decoration: none; */
     color: midnightblue;
 }
+.anni {
+    background-color: rgb(255, 177, 177);
+    border-radius: 1000px;
+    padding: 5px 10px;
+    color: white;
+}
