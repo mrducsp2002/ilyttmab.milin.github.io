@@ -32,10 +32,11 @@ openLetterButtons.forEach(button => {
             audio.currentTime = 2;
             audio.play(); //Play audio in letter;
         }
+        carouselButtons.forEach(button => {
+            button.disabled = true;
+            button.classList.add("d-none")
+        });
     })
-    carouselButtons.forEach(button => {
-        button.disabled = true;
-    });
 });
 
 
@@ -49,6 +50,7 @@ closeLetterButtons.forEach(button => {
         audio.pause(); //Play audio in letter
         carouselButtons.forEach(button => {
             button.disabled = false;
+            button.classList.remove("d-none")
         });
     });
 });
@@ -65,6 +67,7 @@ overlays.forEach(overlay => {
         audio.pause(); //Play audio in letter
         carouselButtons.forEach(button => {
             button.disabled = false;
+            button.classList.remove("d-none")
         });
     });
 });
