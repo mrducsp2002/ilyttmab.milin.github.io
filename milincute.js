@@ -14,6 +14,10 @@ function scrollToSection(direction) {
         duration: 1000 // set the duration to 1000ms
     });
 }
+carouselButtons.forEach(button => {
+            button.disabled = true;
+            button.classList.add("d-none")
+        })
 
 window.addEventListener('wheel', event => {
     const direction = event.deltaY > 0 ? 'down' : 'up';
@@ -48,10 +52,10 @@ closeLetterButtons.forEach(button => {
             overlay.classList.remove("active"); // remove the overlay when closing letters
         });
         audio.pause(); //Play audio in letter
-        carouselButtons.forEach(button => {
-            button.disabled = false;
-            button.classList.remove("d-none")
-        });
+        // carouselButtons.forEach(button => {
+        //     // button.disabled = false;
+        //     // button.classList.remove("d-none")
+        // });
     });
 });
 
@@ -65,10 +69,10 @@ overlays.forEach(overlay => {
             overlay.classList.remove("active"); // remove the overlay when clicking outside the letters
         });
         audio.pause(); //Play audio in letter
-        carouselButtons.forEach(button => {
-            button.disabled = false;
-            button.classList.remove("d-none")
-        });
+        // carouselButtons.forEach(button => {
+        //     button.disabled = false;
+        //     button.classList.remove("d-none")
+        // });
     });
 });
 
