@@ -188,8 +188,7 @@ table {
 }
 
 #background2 {
-  background: linear-gradient(rgba(55, 48, 55, 0.79), rgba(49, 44, 51, 0.79)),
-    url("lettercover1.JPG") no-repeat;
+background: linear-gradient(rgba(248, 179, 100, 0.3), rgba(248, 179, 100, 0.3)), url("background.jpg") no-repeat;  background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-position: center 55%;
   background-size: cover;
