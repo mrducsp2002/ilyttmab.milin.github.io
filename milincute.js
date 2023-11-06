@@ -32,8 +32,8 @@ openLetterButtons.forEach(button => {
         overlays.forEach(overlay => {
             overlay.classList.add("active"); // assign the overlay to all buttons that open letters
         });
-        if (button.getAttribute('data-letter-target') === '#letter-16') {
-            audio.currentTime = 2;
+        if (button.getAttribute('data-letter-target') === '#letter-16' || button.getAttribute('data-letter-target') === '#letter-final') {
+            audio.currentTime = 0;
             audio.play(); //Play audio in letter;
         }
         carouselButtons.forEach(button => {
